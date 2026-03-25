@@ -1,7 +1,7 @@
 services:
-  postgres:
+  postgres-dev:
     image: postgres:18
-    container_name: api-animes-teste-postgres
+    container_name: api-animes-teste-postgres-dev
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: postgres
