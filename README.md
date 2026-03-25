@@ -25,4 +25,4 @@ Things you may want to cover:
 
 ## Diagrama ER
 
-[DrawDB](https://drawdb.vercel.app/editor/diagrams/013da8eb-789a-4007-b0e0-c8980a765d22)
+[DrawDB](https://drawdb.vercel.app/editor?shareId=0be8ac6ad2db6e7b3b1650647b62c60a)
