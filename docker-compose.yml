@@ -3,7 +3,7 @@ services:
     image: postgres:18
     container_name: api-animes-teste-postgres-dev
     environment:
-      POSTGRES_DB: postgres
+      POSTGRES_DB: animes_api_development
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
@@ -11,11 +11,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql
     healthcheck:
-      test:
-        [
-          'CMD-SHELL',
-          'pg_isready -U postgres -d postgres',
-        ]
+      test: [ 'CMD-SHELL', 'pg_isready -U postgres -d postgres' ]
       interval: 5s
       timeout: 5s
       retries: 5

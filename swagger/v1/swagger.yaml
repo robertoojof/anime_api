@@ -1,0 +1,53 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/plataformas":
+    get:
+      summary: Lista plataformas
+      tags:
+      - Plataformas
+      responses:
+        '200':
+          description: sucesso
+    post:
+      summary: Cria uma plataforma
+      tags:
+      - Plataformas
+      parameters: []
+      responses:
+        '201':
+          description: criado
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nome:
+                  type: string
+                url:
+                  type: string
+              required:
+              - nome
+  "/plataformas/{id}":
+    get:
+      summary: Busca plataforma
+      tags:
+      - Plataformas
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: sucesso
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
