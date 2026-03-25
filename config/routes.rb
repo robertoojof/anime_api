@@ -9,5 +9,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
   resources :plataformas
+
+  scope :health do
+    get "/",     to: "health#health"
+    get "/ready", to: "health#ready"
+  end
 end
