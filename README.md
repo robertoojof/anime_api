@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Diagrama ER
+
+[DrawDB](https://drawdb.vercel.app/editor/diagrams/013da8eb-789a-4007-b0e0-c8980a765d22)
