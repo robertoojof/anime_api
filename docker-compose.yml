@@ -1,5 +1,5 @@
 services:
-  postgres-dev:
+  postgres-dev-animes-api:
     image: postgres:18
     container_name: api-animes-teste-postgres-dev
     environment:
