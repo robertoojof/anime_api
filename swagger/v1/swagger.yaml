@@ -12,7 +12,7 @@ paths:
       responses:
         '200':
           description: ok
-  "/ready":
+  "/health/ready":
     get:
       summary: Readiness check
       tags:
