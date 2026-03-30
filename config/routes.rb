@@ -12,8 +12,6 @@ Rails.application.routes.draw do
 
   resources :plataformas
 
-  scope :health do
-    get "/",     to: "health#health"
-    get "/ready", to: "health#ready"
-  end
+  get "/health", to: "health#health"
+  get "/ready", to: "health#ready"
 end

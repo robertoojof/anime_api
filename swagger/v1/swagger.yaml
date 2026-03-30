@@ -4,6 +4,24 @@ info:
   title: API V1
   version: v1
 paths:
+  "/health":
+    get:
+      summary: Health check
+      tags:
+      - Health
+      responses:
+        '200':
+          description: ok
+  "/ready":
+    get:
+      summary: Readiness check
+      tags:
+      - Health
+      responses:
+        '200':
+          description: ok
+        '503':
+          description: service unavailable
   "/plataformas":
     get:
       summary: Lista plataformas
