@@ -26,3 +26,8 @@ Things you may want to cover:
 ## Diagrama ER
 
 [DrawDB](https://drawdb.vercel.app/editor?shareId=0be8ac6ad2db6e7b3b1650647b62c60a)
+
+### Ideias
+
+* Conexão com api do MAL no front para mostrar mais algumas informações do anime
+  * <https://myanimelist.net/apiconfig/references/api/v2>
